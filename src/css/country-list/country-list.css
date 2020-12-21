@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Padauk&display=swap");
+
+.list-content {
+  background: none;
+  padding: 5px;
+  overflow-y: auto;
+}
+.control-panel input {
+  padding: 2px;
+  width: 75%;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.list-item:hover {
+  background-color: rgba(140, 11, 41, 0.6);
+}
+
+.number {
+  color: red;
+}
+
+.country {
+  color: #cbd4cf;
+  font-size: 15px;
+  margin-left: 7px;
+}
+.country-flag {
+  margin-left: 2px;
+  width: 32px;
+  height: 100%;
+}
+
+.country-flag img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+Scrollbar copied from:
+https://yraaa.ru/scripts/stilizatsiya-polosyi-prokrutki-s-pomoschyu-css
+*/
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: rgb(247, 20, 20);
+}
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
